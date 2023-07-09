@@ -94,8 +94,8 @@ export default function Home() {
             <div className="flex justify-center items-center gap-4">
               <Image
                 src={"/endaoment_logo.png"}
-                height={100}
-                width={100}
+                height={200}
+                width={200}
                 alt=""
               />
               <Image src={"/scroll_logo.jpg"} height={100} width={150} alt="" />
@@ -107,6 +107,7 @@ export default function Home() {
           id="donations"
           className="flex flex-col p-12 gap-12 justify-center items-center"
         >
+          <h2 className="text-4xl font-semibold">Endaoment Donations</h2>
           <OrganizationCard
             name={orgs[2]?.name}
             description={orgs[2]?.description}
