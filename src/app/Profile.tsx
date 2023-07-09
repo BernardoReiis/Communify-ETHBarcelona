@@ -28,7 +28,9 @@ export function Profile() {
 
   if (isConnected) {
     return (
-      <button className="btn btn-primary btn-sm">Disconnect {connector?.name}</button>
+      <button className="btn btn-primary btn-sm" onClick={() => disconnect}>
+        Disconnect {connector?.name}
+      </button>
     );
   }
 
