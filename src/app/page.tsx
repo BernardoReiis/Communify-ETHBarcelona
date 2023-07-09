@@ -115,7 +115,7 @@ export default function Home() {
 
       {showMain && (
         <div>
-          <div className="flex justify-center">
+          <div className="flex flex-col justify-center">
             <div className="flex flex-col text-center justify-center gap-6 mt-36">
               <h2 className="text-4xl">
                 Communifying your donations and impact!
@@ -124,9 +124,26 @@ export default function Home() {
                 Why donate alone when you can do it with your community?
               </h3>
             </div>
+            <div className="flex items-center text-center justify-center gap-10 mt-20">
+              <p className="text-lg">Powered by:</p>
+              <div className="flex gap-8">
+                <Image
+                  src={"/endaoment_logo.png"}
+                  height={100}
+                  width={100}
+                  alt=""
+                />
+                <Image
+                  src={"/scroll_logo.jpg"}
+                  height={100}
+                  width={100}
+                  alt=""
+                />
+                <Image src={"/zksync.png"} height={100} width={100} alt="" />
+              </div>
+            </div>
           </div>
           <div className="flex flex-col p-12 gap-12 justify-center items-center">
-
             <OrganizationCard
               name={orgs[2]?.name}
               description={orgs[2]?.description}
@@ -143,7 +160,6 @@ export default function Home() {
               contractAddress={orgs[14]?.contractAddress}
             />
           </div>
-
         </div>
       )}
     </div>
