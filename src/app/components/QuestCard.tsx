@@ -32,7 +32,7 @@ const QuestCard: React.FC<Props> = (props) => {
           <h2 className="card-title">{props.title}</h2>
           <p className="line-clamp-4">{props.description}</p>
           <p>{"Group: " + props.group}</p>
-          <div className="card-actions justify-between mt-4">
+          <div className="card-actions justify-between mt-4 items-center">
             <button
               disabled={props.isCompleted}
               className="btn btn-primary"
