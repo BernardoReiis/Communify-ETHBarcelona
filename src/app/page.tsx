@@ -124,9 +124,9 @@ export default function Home() {
                 Why donate alone when you can do it with your community?
               </h3>
             </div>
-            <div className="flex items-center text-center justify-center gap-10 mt-20">
+            <div className="flex items-center flex-col text-center justify-center gap-4 mt-20">
               <p className="text-lg">Powered by:</p>
-              <div className="flex gap-8">
+              <div className="flex justify-center items-center gap-4">
                 <Image
                   src={"/endaoment_logo.png"}
                   height={100}
@@ -136,10 +136,10 @@ export default function Home() {
                 <Image
                   src={"/scroll_logo.jpg"}
                   height={100}
-                  width={100}
+                  width={150}
                   alt=""
                 />
-                <Image src={"/zksync.png"} height={100} width={100} alt="" />
+                <Image src={"/zksync.png"} height={100} width={140} alt="" />
               </div>
             </div>
           </div>
