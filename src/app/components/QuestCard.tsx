@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Image from "next/image";
 
 // import { useDebounce } from "use-debounce";
 import { usePrepareSendTransaction } from "wagmi";
@@ -39,6 +40,17 @@ const QuestCard: React.FC<Props> = (props) => {
             >
               {props.isCompleted ? "Completed" : "Mint"}
             </button>
+            {props.isCompleted && (
+              <a href="/nft.jpg" target="_blank">
+                <Image
+                  className="rounded-lg"
+                  src="/nft.jpg"
+                  alt=""
+                  width={100}
+                  height={100}
+                />
+              </a>
+            )}
           </div>
         </div>
       </div>
