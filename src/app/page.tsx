@@ -143,7 +143,10 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col p-12 gap-12 justify-center items-center">
+          <div
+            id="donations"
+            className="flex flex-col p-12 gap-12 justify-center items-center"
+          >
             <OrganizationCard
               name={orgs[2]?.name}
               description={orgs[2]?.description}
