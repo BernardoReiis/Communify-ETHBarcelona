@@ -102,9 +102,9 @@ export default function Home() {
                 isCompleted={false}
               />
               <QuestCard
-                title="Barcelona Quest 3"
+                title="Attend ETHBarcelona"
                 creator="@BernardoReiis"
-                description="This is the last quest about Barcelona"
+                description="Build an amazing telegram bot with Web2 and Web3"
                 group="Hackathon BCN"
                 isCompleted={false}
               />
