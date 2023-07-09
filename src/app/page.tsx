@@ -69,8 +69,9 @@ export default function Home() {
           <div onClick={handleShowQuests}>
             <QuestsButton />
           </div>
-
-          <Donate />
+          <a href="#donations">
+            <Donate />
+          </a>
           <ConnectWallet />
         </div>
       </div>
